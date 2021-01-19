@@ -17,8 +17,8 @@ app.get("/", (req, res) =>
   res.status(200).json({ message: "Ecommerce app successful" })
 );
 
-// const routes = require("../routes");
+const routes = require("../routes");
 // Main function to connect to the database
-// app.use("/", routes);
+app.use("/", routes);
 
 module.exports = app;
